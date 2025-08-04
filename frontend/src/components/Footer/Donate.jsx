@@ -4,9 +4,9 @@ import bankQR from "../../assets/images/QR.jpg";
 
 const Donate = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center py-16">
+    <div className="min-h-screen  flex flex-col items-center justify-center py-16">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-white/65 mb-6">
           Support Us with Your Donation
         </h2>
         <p className="text-lg text-gray-600 text-center mb-4">

@@ -66,7 +66,7 @@ const Profile = ({user}) => {
     <div className="mt-10">
          <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Full Name
             </label>
             <input
@@ -75,13 +75,13 @@ const Profile = ({user}) => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Enter your full name"
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
               required
             />
           </div>
 
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Email
             </label>
             <input
@@ -90,14 +90,14 @@ const Profile = ({user}) => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
               aria-readonly
               readOnly
             />
           </div>
 
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Password
             </label>
             <input
@@ -106,14 +106,14 @@ const Profile = ({user}) => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Change password"
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-200 outline-none"
              
             />
           </div>
           
 
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Confirm Password
             </label>
             <input
@@ -122,12 +122,12 @@ const Profile = ({user}) => {
               value={formData.confirmPassword}
               onChange={handleChange}
               placeholder="Re-enter your password"
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
               
             />
           </div>
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Rashi
             </label>
             <input
@@ -136,13 +136,13 @@ const Profile = ({user}) => {
               value={formData.rashi}
               onChange={handleChange}
               placeholder="Change Rashi"
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
               
             />
           </div>    
 
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               {selectedFile ? selectedFile.name : 'Upload Photo'}
             </label>
 
@@ -151,36 +151,36 @@ const Profile = ({user}) => {
               name="photo"
               accept="image/*"
               onChange={handleFileInputChange} // make sure this is the cloud upload function
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg bg-gray-50"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg bg-gray-50"
             /> 
 
             {formData.photo && (
               <div className="mt-4">
-                <p className="text-sm text-gray-600 mb-1">Preview:</p>
+                <p className="text-sm text-white mb-1">Preview:</p>
                 <img
                   src={formData.photo}
                   alt="Selected"
-                  className="w-24 h-24 object-cover rounded-full border border-gray-300"
+                  className="w-24 h-24 object-cover rounded-full border text-white"
                 />
               </div>
             )}
           </div>
 
           <div>
-            <label className="block mb-1 text-[16px] font-medium text-gray-900">
+            <label className="block mb-1 text-[16px] font-medium text-white">
               Gender
             </label>
             <select
               name="gender"
               value={formData.gender}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-400 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
+              className="w-full px-4 py-2 border border-gray-400 bg-white/90 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
               required
             >
-              <option value="" disabled>
+              <option value="" disabled className="bg-white/90">
                 Select gender
               </option>
-              <option value="male">Male</option>
+              <option value="male" >Male</option>
               <option value="female">Female</option>
               <option value="other">Other</option>
             </select>

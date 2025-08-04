@@ -11,7 +11,7 @@ const MyBookings = () => {
   );
 
   return (
-    <div className="py-6 bg-gray-50 min-h-screen">
+    <div className="py-6 bg-white/20 min-h-screen">
       {loading && !error && <Loading />}
       {error && !loading && <Error errMessage={error} />}
 

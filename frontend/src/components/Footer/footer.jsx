@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/astrologo.png";
 import { RiLinkedinFill } from "react-icons/ri";
 import {
   AiOutlineFacebook,
@@ -125,7 +125,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-gray-300 pt-6 text-center text-lg">
         &copy; {year} Developed by Nikit & Mulla. All rights reserved.
-         <p> Made with ❤️ by Nikit Sapkota and Khate Malla</p>
+         <p> Made with ❤️ by Nikit Sapkota and Ain Malla</p>
         </div>
       </div>
     </footer>

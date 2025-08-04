@@ -153,7 +153,7 @@ const Testimonial = () => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div className="rounded-2xl border border-gray-200 bg-white/40 p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="flex items-center gap-4">
                 <img
                   src={clientAvatar}
@@ -161,7 +161,7 @@ const Testimonial = () => {
                   className="w-14 h-14 rounded-full object-cover border border-gray-200"
                 />
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-800">
+                  <h4 className="text-lg font-semibold text-black">
                     {testimonial.name}
                   </h4>
                   <div className="flex items-center mt-1">
@@ -171,7 +171,7 @@ const Testimonial = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm mt-4 leading-relaxed">
+              <p className="text-black [word-spacing:0.1em] text-sm mt-4 leading-relaxed">
                 “{testimonial.text}”
               </p>
             </div>

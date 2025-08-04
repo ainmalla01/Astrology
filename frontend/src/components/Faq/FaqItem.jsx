@@ -11,7 +11,7 @@ const FaqItem = ({ item }) => {
     <div className="rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
       <div
         onClick={toggleAccordion}
-        className="flex items-center justify-between p-5 cursor-pointer transition-colors hover:bg-gray-50"
+        className="flex items-center justify-between p-5 cursor-pointer transition-colors "
       >
         <h4 className="text-lg md:text-xl font-semibold text-gray-800">
           {item.question}

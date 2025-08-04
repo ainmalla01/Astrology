@@ -33,15 +33,15 @@ const MyAccount = () => {
   };
 
   return (
-    <section className="py-10 bg-gray-50 min-h-screen">
+    <section className="py-10  min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
         {loading && !error && <Loading />}
         {error && !loading && <Error errMessage={error} />}
 
         {!loading && !error && (
-          <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="flex flex-col md:flex-row bg-white/5 shadow-lg rounded-lg overflow-hidden">
             {/* Sidebar */}
-            <div className="w-full md:w-1/4 bg-gray-100 border-r p-6 space-y-4">
+            <div className="w-full md:w-1/4 bg-white/70 border-r p-6 space-y-4">
               {/* Profile Info */}
               <div className="flex flex-col items-center text-center mb-6">
                 <img
@@ -49,13 +49,13 @@ const MyAccount = () => {
                   alt="Profile"
                   className="w-20 h-20 rounded-full object-cover border-4 border-indigo-500"
                 />
-                <h3 className="mt-3 text-lg font-semibold text-gray-800">
+                <h3 className="mt-3 text-lg font-bold text-black">
                   {userData.name}
                 </h3>
-                <p className="text-sm text-gray-500">{userData.email}</p>
-                <p className="text-sm mt-1 text-gray-500">
+                <p className="text-sm text-black/80">{userData.email}</p>
+                <p className="text-sm mt-1 text-black/80">
                   Rashi:{" "}
-                  <span className="text-indigo-600 font-medium">
+                  <span className="text-black/80 font-medium">
                     {userData.rashi}
                   </span>
                 </p>
@@ -66,7 +66,7 @@ const MyAccount = () => {
                 <button
                   key={item}
                   onClick={() => handleTabClick(item)}
-                  className={`w-full text-left py-2 px-4 rounded-md font-medium transition ${
+                  className={`w-full text-left text-black/80 font-medium py-2 px-4 rounded-md font-medium transition ${
                     tab === item
                       ? "bg-indigo-600 text-white"
                       : item === "logout"

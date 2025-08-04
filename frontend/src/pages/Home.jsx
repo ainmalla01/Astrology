@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg01 from "../assets/images/astro1.jpg";
 import heroImg02 from "../assets/images/mulla.jpg";
-import icon01 from "../assets/images/icon01.png";
+import icon01 from "../assets/images/astrologerIcon.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import Image01 from "../assets/webimg/image04.webp";
@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       {/* herosec */}
-      <section className="hero_section pt-[50px] 2xl:h-[800px] mx-[5em]">
+      <section className="hero_section pt-[50px] 2xl:h-[800px]  mx-[5em]">
         <div className="container flex gap-[2em]">
           <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
             {/* herocontent */}
@@ -58,32 +58,32 @@ const Home = () => {
               {/* hero counter */}
               <div className="mt-[10px] lg:mt-[40px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Astrologers */}
-                <div className="p-3 bg-gradient-to-br from-purple-100 to-white border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
+                <div className="p-3  bg-[linear-gradient(to_right,_rgba(255,255,255,0.06),_rgba(255,255,255,0.1))] border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
                   <UserGroupIcon className="w-10 h-7 text-purple-600 mx-auto mb-3" />
                   <h2 className="text-[30px] font-bold text-purple-700">
                     200+
                   </h2>
-                  <p className="text-gray-600 font-medium">
+                  <p className="text-white/75 font-medium">
                     Expert Astrologers
                   </p>
                 </div>
 
                 {/* Experience */}
-                <div className="p-3 bg-gradient-to-br from-purple-100 to-white border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
+                <div className="p-3 bg-[linear-gradient(to_right,_rgba(255,255,255,0.06),_rgba(255,255,255,0.1))] border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
                   <CalendarDaysIcon className="w-10 h-7 text-yellow-500 mx-auto mb-3" />
                   <h2 className="text-[30px] font-bold text-yellow-600">
                     20+ Years
                   </h2>
-                  <p className="text-gray-600 font-medium">
+                  <p className="text-white/75 font-medium">
                     Experience in the field
                   </p>
                 </div>
 
                 {/* Satisfaction */}
-                <div className="p-3 bg-gradient-to-br from-purple-100 to-white border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
+                <div className="p-3 bg-[linear-gradient(to_right,_rgba(255,255,255,0.06),_rgba(255,255,255,0.1))] border  border-purple-200 rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 text-center h-[20vh]">
                   <FaceSmileIcon className="w-10 h-7 text-green-500 mx-auto mb-3" />
                   <h2 className="text-[30px] font-bold text-green-600">100%</h2>
-                  <p className="text-gray-600 font-medium">
+                  <p className="text-white/75 font-medium">
                     Client Satisfaction
                   </p>
                 </div>
@@ -121,73 +121,74 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
-            <div className="py-[30px] px-5 bg-white rounded-xl shadow-md- hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+           <div className="py-[30px] px-2 rounded-xl min-h-[max-content] border-t border-l hover:border-none border-white shadow-md hover:shadow-xl hover:shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-shadow duration-300 transform hover:-translate-y-2 bg-[rgba(255,255,255,0.05)] backdrop-blur-md text-white">
+
               <div className="flex items-center justify-center">
                 <img
                   src={icon01}
                   alt=""
-                  className="w-[260px] h-[172px] object-contain"
+                  className="w-[230px] h-[150px] object-contain"
                 />
               </div>
               <div className="mt-[30px]">
-                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
+                <h2 className="text-[24px] leading-9 text-white font-[700] text-center">
                   Find a astrologer
                 </h2>
-                <p className="text-[16px] leading-7 text-textColor font-[400px] mt-4 text-center">
+                <p className="text-[14px] leading-7 text-white font-[400px] mt-4 mx-2 text-center">
                   World class astrological services. Our system provides
                   unmatched, expert based astrological services.
                 </p>
                 <Link
                   to="/astrologers"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-white mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5 transition-all duration-300" />
                 </Link>
               </div>
             </div>
-            <div className="py-[30px] px-5 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+            <div className="py-[30px] px-2 rounded-xl min-h-[max-content] border-b border-r border-white shadow-md hover:shadow-xl hover:border-none hover:shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-shadow duration-300 transform hover:-translate-y-2 bg-[rgba(255,255,255,0.05)] backdrop-blur-md text-white">
               <div className="flex items-center justify-center">
                 <img
                   src={icon02}
                   alt=""
-                  className="w-[260px] h-[172px] object-contain"
+                  className="w-[230px] h-[150px] object-contain"
                 />
               </div>
               <div className="mt-[30px]">
-                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
+                <h2 className="text-[24px] leading-9 text-white font-[700] text-center">
                   Find Location
                 </h2>
-                <p className="text-[16px] leading-7 text-textColor font-[400px] mt-4 text-center">
+                <p className="text-[14px] leading-7 text-white font-[400px] mt-4 mx-2 text-center">
                   World class astrological services. Our system provides
                   unmatched, expert based astrological services.
                 </p>
                 <Link
                   to="https://www.google.com/maps?q=Vedas+College"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-white mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5 transition-all duration-300" />
                 </Link>
               </div>
             </div>
-            <div className="py-[30px] px-5 bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+            <div className="py-[30px] px-2 rounded-xl min-h-[max-content] border-b border-t border-white hover:border-none shadow-md hover:shadow-xl hover:shadow-[0_0_8px_rgba(255,255,255,0.5)] transition-shadow duration-300 transform hover:-translate-y-2 bg-[rgba(255,255,255,0.05)] backdrop-blur-md text-white">
               <div className="flex items-center justify-center">
                 <img
                   src={icon03}
                   alt=""
-                  className="w-[260px] h-[172px] object-contain"
+                  className="w-[230px] h-[150px] object-contain"
                 />
               </div>
               <div className="mt-[30px]">
-                <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">
+                <h2 className="text-[24px] leading-9 text-white font-[700] mx-1 text-center">
                   Book Appointment
                 </h2>
-                <p className="text-[16px] leading-7 text-textColor font-[400px] mt-4 text-center">
+                <p className="text-[14px] leading-7 text-white font-[400px] mt-4 mx-2 text-center">
                   World class astrological services. Our system provides
                   unmatched, expert based astrological services.
                 </p>
                 <Link
                   to="/astrologers"
-                  className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
+                  className="w-[44px] h-[44px] rounded-full border border-solid border-white mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none transition-all duration-300"
                 >
                   <BsArrowRight className="group-hover:text-white w-6 h-5 transition-all duration-300" />
                 </Link>
@@ -321,7 +322,7 @@ const Home = () => {
       {/* Image Section */}
       <div className="hidden md:block lg:w-5/12">
         <img
-          className="w-full h-auto rounded-3xl shadow-xl object-cover transition duration-500 transform hover:scale-105"
+          className="w-full h-auto rounded-3xl shadow-xl object-cover transition duration-500 transform hover:scale-[101%]"
           src={faqImg}
           alt="FAQ Illustration"
         />

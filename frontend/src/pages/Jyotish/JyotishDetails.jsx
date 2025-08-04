@@ -42,7 +42,7 @@ const JyotishDetails = () => {
         {!loading && !error && (
           <div className="grid md:grid-cols-3 gap-[50px]">
             <div className="md:col-span-2">
-              <div className="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-[#f5f5f5]">
+              <div className="flex flex-col md:flex-row items-center gap-8 bg-white/10 p-6 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-[#f5f5f5]">
                 <figure className="max-w-[200px] max-h-[200px]">
                   <img 
                     src={photo} 
@@ -52,11 +52,11 @@ const JyotishDetails = () => {
                 </figure>
                 <div className="mt-3 md:mt-0 text-center md:text-left">
                   <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-                    <span className="bg-gradient-to-r from-[#CCF0F3] to-[#e6f8fa] text-irisBlueColor py-2 px-6 text-[15px] leading-5-7 font-semibold rounded-full shadow-sm">
+                    <span className="bg-gradient-to-r from-[#CCF0F3] to-[#e6f8fa] text-black py-2 px-6 text-[15px] leading-5-7 font-semibold rounded-full shadow-sm">
                       {specialization}
                     </span>
                   </div>
-                  <h3 className="text-headingColor text-[24px] md:text-[28px] leading-9 mt-4 font-bold">
+                  <h3 className="text-white text-[24px] md:text-[28px] leading-9 mt-4 font-bold">
                     {name}
                   </h3>
                   <div className="flex items-center gap-[6px] mt-2 justify-center md:justify-start">
@@ -72,7 +72,7 @@ const JyotishDetails = () => {
                       </span>
                     </span>
                   </div>
-                  <p className="text-[14px] leading-6 md:text-[16px] mt-4 text-gray-600 max-w-[95%] mx-auto md:mx-0">
+                  <p className="text-[14px] leading-6 md:text-[16px] mt-4 text-white/80 max-w-[95%] mx-auto md:mx-0">
                     {bio}
                   </p>
                 </div>
@@ -81,7 +81,7 @@ const JyotishDetails = () => {
               <div className="mt-[50px] border-b border-solid border-[#0066FF34] flex justify-center md:justify-start">
                 <button
                   onClick={() => setTab("about")}
-                  className={`py-3 px-8 mr-5 text-[16px] leading-7 text-headingColor font-semibold transition-all duration-300 hover:text-primaryColor ${
+                  className={`py-3 px-8 mr-5 text-[16px] leading-7 text-headingColor text-white font-semibold transition-all duration-300 hover:text-primaryColor ${
                     tab === "about"
                       ? "border-b-2 border-solid border-primaryColor text-primaryColor"
                       : ""
@@ -91,7 +91,7 @@ const JyotishDetails = () => {
                 </button>
                 <button
                   onClick={() => setTab("feedback")}
-                  className={`py-3 px-8 mr-5 text-[16px] leading-7 text-headingColor font-semibold transition-all duration-300 hover:text-primaryColor ${
+                  className={`py-3 px-8 mr-5 text-[16px] leading-7 text-white text-headingColor font-semibold transition-all duration-300 hover:text-primaryColor ${
                     tab === "feedback"
                       ? "border-b-2 border-solid border-primaryColor text-primaryColor"
                       : ""
@@ -101,7 +101,7 @@ const JyotishDetails = () => {
                 </button>
               </div>
               
-              <div className="mt-[50px] bg-white p-6 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-[#f5f5f5]">
+              <div className="mt-[50px] bg-white/25 p-6 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-white/50">
                 {tab === "about" && <JyotishAbout name={name} about={about} qualifications={qualifications} experiences={experiences} />}
                 {tab === "feedback" && <Feedback reviews={reviews} totalRating={totalRating} />}
               </div>

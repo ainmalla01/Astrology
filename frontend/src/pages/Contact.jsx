@@ -23,8 +23,8 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center from-indigo-400 to-purple-500 px-5 py-10 ">
-      <div className="w-full max-w-6xl  rounded-xl shadow-lg p-6 md:p-12 flex flex-col md:flex-row gap-10 backdrop-blur-lg border border-black">
+    <section className="min-h-screen flex items-center justify-center  px-5 py-10 ">
+      <div className="w-full max-w-6xl  rounded-xl shadow-[0_0_10px_4px_rgba(255,255,255,0.2)] p-6 md:p-12 flex flex-col md:flex-row gap-10 backdrop-blur-xl ">
         {/* Left - Location Info & Map */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-3xl font-semibold text-white">Our Location</h2>
@@ -57,7 +57,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right - Contact Form */}
-        <div className="w-full md:w-1/2 bg-white rounded-2xl p-8 shadow-lg">
+        <div className="w-full md:w-1/2 bg-white/70 rounded-2xl p-8 shadow-lg">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Us</h2>
 
           <form onSubmit={handleFormSubmit} className="space-y-6">

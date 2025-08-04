@@ -1,5 +1,5 @@
 import React from "react";
-import nikit from './../../assets/images/nikiy.jpg'
+import nikit from './../../assets/webimg/web002.webp'
 
 const AboutPage = () => {
   return (
@@ -8,7 +8,7 @@ const AboutPage = () => {
         {/* About Page Content */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-[50px] lg:gap-[130px]">
           {/* Image Section */}
-          <div className="relative w-full md:w-2/3 lg:w-1/2 xl:w-[600px]">
+          <div className="relative w-full h-[50vh]  lg:w-1/2 xl:w-[600px]">
             <img
               src={nikit} 
               alt="About Us"
@@ -56,9 +56,9 @@ const AboutPage = () => {
         </div>
 
         {/* Additional Information Section */}
-        <div className="mt-16 bg-white p-8 rounded-lg shadow-md">
+        <div className="mt-16  p-8 rounded-lg shadow-md border border-white">
           <h2 className="text-3xl font-semibold text-white mb-6">What We Offer</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          <p className="text-lg text-gray-700 leading-relaxed text-white mb-4">
             We offer a variety of services designed to address the needs of our clients. Whether you need personalized advice, professional consultation, or expert guidance, we are here to help.
           </p>
           <ul className="list-disc pl-6 text-lg text-white mb-6">

@@ -37,7 +37,7 @@ const SidePanel = ({ astrologerId, ticketPrice, timeSlots }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg p-6 rounded-2xl border border-[#f3f3f3]">
+    <div className="bg-white/70 shadow-lg p-6 rounded-2xl border border-[#f3f3f3]">
       <div className="flex items-center justify-between mb-6 pb-4 border-b border-dashed border-[#e9ecef]">
         <p className="text-[16px] font-bold text-headingColor">Consultation Fee</p>
         <span className="text-[20px] leading-7 lg:text-[24px] lg:leading-8 text-primaryColor font-bold bg-[#f8f9ff] py-1 px-4 rounded-lg">

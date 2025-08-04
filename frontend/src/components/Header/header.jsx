@@ -43,7 +43,7 @@ const Header = () => {
   return (
 <header
   ref={headerRef}
-  className={`relative w-screen flex flex-col items-center gap-[0.3em] transition-all duration-300 ease-in-out px-[5em] ${
+  className={`relative w-screen flex flex-col items-center bg-black/40 gap-[0.3em] transition-all duration-300 ease-in-out px-[5em] ${
     isSticky ? "h-[12vh] w-screen" : "h-[25vh] w-screen"
   } py-[0.5em]`}
   style={{ boxShadow: "0 1px 1px rgba(255, 255, 255, 0.2)" }}
@@ -116,14 +116,14 @@ const Header = () => {
       <div
         className={`bottomheader text-white h-[55%] flex justify-between  items-center px-[0.5em] w-[100%] transition-all duration-300   ${
           isSticky
-            ? "fixed max-h-[12vh] top-0 right-0  z-50 shadow-md w-[100%] px-[6em] backdrop-blur-lg "
+            ? "fixed max-h-[12vh] top-0 right-0  z-50 shadow-md w-[100%] px-[6em] backdrop-blur-lg  bg-black/40 "
             : ""
         }`}
       >
         {/* Logo */}
-        <div className="logo h-[30vh] w-[200px]  relative">
+        <div className="logo h-[20vh] w-[300px]   relative">
           <a href="/">
-            <img src={logo} alt="Logo" className="w-full h-full" />
+            <img src={logo} alt="Logo" className="w-full h-[90%] mt-[10%] pb-[0.2em]" />
           </a>
         </div>
 
@@ -139,7 +139,7 @@ const Header = () => {
                   to={link.path}
                   className={({ isActive }) => {
                     const baseStyle =
-                      "text-[16px] leading-7 font-[500] px-4 py-2 rounded-full transition-all duration-200";
+                      "text-[17px] leading-7 font-[500] px-4 py-2 rounded-full transition-all duration-200";
                     const activeStyle =
                       "bg-gradient-to-r from-purple-500 to-pink-500 text-white font-[600] shadow-lg";
 
