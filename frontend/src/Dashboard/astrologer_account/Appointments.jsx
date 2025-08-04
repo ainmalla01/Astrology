@@ -4,7 +4,7 @@ import { FormatDate } from "../../utils/FormatDate";
 const Appointments = ({ appointments }) => {
   return (
     <table className="w-full text-left text-sm text-gray-500">
-      <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+      <thead className="text-xs text-white uppercase bg-white/20">
         <tr>
           <th scope="col" className="px-6 py-3">Name</th>
           <th scope="col" className="px-6 py-3">Gender</th>
@@ -24,7 +24,7 @@ const Appointments = ({ appointments }) => {
                   className="w-10 h-10 rounded-full"
                   alt={item.user?.name || "User"}
                 />
-                <div className="pl-3">
+                <div className="pl-3 border-l broder-black">
                   <div className="text-base font-semibold">{item.user?.name || "Unknown User"}</div>
                   <div className="text-normal text-gray-500">{item.user?.email || "No email provided"}</div>
                 </div>

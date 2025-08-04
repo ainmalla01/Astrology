@@ -12,7 +12,7 @@ const JyotishAbout = ({ name, about, qualifications, experiences }) => {
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-indigo-500 opacity-50 rounded-full"></span>
           </span>
         </h3>
-        <p className="text-white mt-6 text-lg leading-relaxed">{about}</p>
+        <p className="text-white mt-6  text-lg leading-relaxed break-words">{about}</p>
 
         <div className="mt-12 border-t pt-8 border-gray-300">
           <h3 className="text-xl font-semibold text-white flex items-center">

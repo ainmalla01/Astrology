@@ -56,7 +56,7 @@ const Header = () => {
         } justify-between mx-[4em] items-center px-[1em] transition-all duration-300`}
       >
         <div className="contact">
-          <span className="text-white">
+          <span className="text-white text-[15px] flex gap-[1em]">
             <p>aionmalla@14gmail.com</p>
             <p>+9770393939</p>
           </span>
@@ -64,7 +64,7 @@ const Header = () => {
 
         {/* User/Login */}
         <div className="login_userprofile">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 px-4">
             {token && user ? (
               <Link
                 to={
@@ -73,7 +73,7 @@ const Header = () => {
                     : "/users/profile/me"
                 }
               >
-                <figure className="w-[40px] h-[40px] rounded-full cursor-pointer">
+                <figure className="w-[50px] h-[50px] rounded-full border border-white cursor-pointer">
                   <img
                     src={user?.photo}
                     className="w-full h-full rounded-full object-cover"
@@ -84,7 +84,7 @@ const Header = () => {
             ) : (
               <div className="flex gap-4">
                 <Link to="/login">
-                  <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">
+                  <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center hover:translate-x-1 rounded-[50px]">
                     {loading ? (
                       <RingLoader size={30} color="#facc15" />
                     ) : (
@@ -93,7 +93,7 @@ const Header = () => {
                   </button>
                 </Link>
                 <Link to="/register">
-                  <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">
+                  <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center hover:translate-x-1 rounded-[50px]">
                     {loading ? (
                       <RingLoader size={30} color="#facc15" />
                     ) : (

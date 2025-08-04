@@ -14,7 +14,7 @@ const AstrologerCard = ({ astrologer }) => {
   } = astrologer;
 
   return (
-    <div className="p-2 lg:p-4 bg-white/5 shadow-lg min-h-[max-content] shadow-[0_0_1px_1px_rgba(255,255,255,0.3)] rounded-xl hover:shadow-2xl transition-all duration-300">
+    <div className="p-2 lg:p-4 bg-white/5 shadow-lg min-h-[max-content] shadow-[0_0_1px_1px_white] rounded-xl hover:shadow-2xl transition-all duration-300">
       {/* Image Section */}
       <div className="w-full h-[200px] lg:h-[250px] overflow-hidden flex justify-center items-center rounded-xl">
         <img

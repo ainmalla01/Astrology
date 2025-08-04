@@ -99,7 +99,7 @@ const handleDeleteAccount = async () => {
       )}
       
       {/* Desktop Menu */}
-      <div className="hidden lg:flex flex-col p-6 bg-white shadow-panelShadow rounded-md">
+      <div className="hidden lg:flex flex-col p-6 bg-white/80 shadow-panelShadow rounded-md">
         {tabs.map((item) => (
           <button
             key={item.id}

@@ -171,13 +171,12 @@ const Profile = ({astrologersData}) => {
   };
   return (
     <div>
-      <h2 className="text-headingColor font-bold text-[24px] leading-9 mb-10">
-        Profile Info
-      </h2>
-      <form className="max-w-xl mx-auto p-7 bg-white rounded-2xl shadow-lg">
+      
+      <form className="max-w-xl mx-auto p-7 bg-white/90 rounded-2xl shadow-lg">
         <div className="mb-5">
-          <div className="w-[150px] h-[30px] bg-indigo-300 mb-5 rounded-full text-center shadow-xl mx-auto">
-            <p className="text-[19px]">Personal Info</p>
+         <div className="relative w-[180px] h-[30px] mb-5 text-center mx-auto after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-full after:border-b after:border-blue-900 after:shadow-xl">
+
+            <p className="text-[24px] font-bold">Personal Info</p>
           </div>
           <label htmlFor="name" className="form_label">
             Name

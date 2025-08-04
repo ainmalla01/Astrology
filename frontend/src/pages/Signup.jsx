@@ -61,8 +61,8 @@ const Signup = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-start justify-center pt-10 bg-gradient-to-r from-indigo-400 to-purple-500 px-5 lg:px-0">
-      <div className="w-full max-w-[500px] bg-white mx-auto rounded-lg shadow-lg shadow-black md:p-10 p-6">
+    <section className="min-h-screen flex items-start justify-center pt-10 px-5 lg:px-0">
+      <div className="w-full max-w-[500px] bg-white/90 mx-auto rounded-lg shadow-lg shadow-black md:p-10 p-6">
         <h3 className="text-headingColor text-[25px] leading-9 font-bold mb-10 text-center">
           Create Your Account
         </h3>

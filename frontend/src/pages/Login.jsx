@@ -58,15 +58,15 @@ const Login = () => {
    };
 
   return (
-    <section className='min-h-screen flex items-center pt-2 justify-center bg-gradient-to-r from-indigo-400 to-purple-500 px-5 lg:px-0'>
-      <div className='w-full max-w-[400px] bg-white mx-auto rounded-lg shadow-lg shadow-black md:p-10 p-6'>
+    <section className='min-h-screen flex items-center pt-2 justify-center px-5 lg:px-0'>
+      <div className='w-full max-w-[400px] bg-white/50 mx-auto rounded-lg shadow-lg shadow-black md:p-8 p-4'>
         <h3 className='text-headingColor text-[25px] leading-9 font-bold mb-10 text-center'>
           Welcome Back!
         </h3>
 
         <form onSubmit={handleSubmit} className='space-y-6'>
           <div>
-            <label className='block mb-1 text-gray-900 font-medium'>Email</label>
+            <label className='block mb-1 text-black font-medium'>Email</label>
             <input
               type='email'
               name='email'
@@ -79,7 +79,7 @@ const Login = () => {
           </div>
 
           <div>
-            <label className='block mb-1 text-gray-900 font-medium'>Password</label>
+            <label className='block mb-1 black font-medium'>Password</label>
             <input
               type='password'
               name='password'

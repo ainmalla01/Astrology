@@ -39,7 +39,7 @@ const MyAccount = () => {
         {error && !loading && <Error errMessage={error} />}
 
         {!loading && !error && (
-          <div className="flex flex-col md:flex-row bg-white/5 shadow-lg rounded-lg overflow-hidden">
+          <div className="flex flex-col md:flex-row bg-white/10 shadow-lg rounded-lg overflow-hidden">
             {/* Sidebar */}
             <div className="w-full md:w-1/4 bg-white/70 border-r p-6 space-y-4">
               {/* Profile Info */}

@@ -22,9 +22,9 @@ const Dashboard = () => {
         {!loading && !error && (
           <div className="grid lg:grid-cols-3 gap-[30px] lg:gap-[50px]">
             <Tabs tab={tab} setTab={setTab} />
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 bg-white/30 rounded-xl px-2">
               {data.isApproved === "pending" && (
-                <div className="flex p-4 mb-4 text-yellow-800 bg-yellow-50 rounded-lg">
+                <div className="flex p-6 mb-4 text-yellow-800 bg-yellow-50 rounded-lg">
                   <svg
                     aria-hidden="true"
                     class="flex-shrink-0 w-5 h-5"
@@ -45,18 +45,21 @@ const Dashboard = () => {
                   </div>
                 </div>
               )}
-              <div className="mt-8">
+              <div className="mt-2">
                 {tab === "overview" && (
                   <div>
                     <div className="flex items-center gap-4 mb-20">
-                      <figure className="max-w-[200px] max-h-[200px]">
-                        <img src={data?.photo} alt="" className="w-full rounded-xl" />
+                      <div className="relative min-h-[max-content flex jutify-center py-4 items-center h-[35vh] w-[15vw] flex-col">
+                      <figure className="max-w-[25vw] max-h-[30vh]">
+                        <img src={data?.photo} alt="" className="w-full h-full  rounded-xl" />
                       </figure>
-                      <div>
-                        <span className="bg-[#CCF0F3] text-irisBlueColor py-1 px-4 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-6 font-semibold">
+                         <span className="bg-black absolute bottom-5 left-[21%] tracking-wide text-irisBlueColor py-1 px-4 lg:py-2 lg:px-6 text-[12px] leading-4 rounded-lg lg:text-[16px] lg:leading-6 font-semibold">
                           {data.specialization}
                         </span>
-                        <h3 className="text-[22px] leading-9 text-headingColor font-bold mt-3">
+                        </div>
+                      <div >
+                     
+                        <h3 className="text-[22px] leading-9 text-white font-bold mt-3">
                           {data.name}
                         </h3>
                         <div className="flex items-center gap-[6px]" >
